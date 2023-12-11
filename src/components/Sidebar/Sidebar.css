@@ -1,0 +1,27 @@
+.containerSidebar {
+  background-color: #ffffff;
+  text-align: center;
+}
+.photoProfile{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.links a{
+    display: inline-block;
+    text-align: left;
+    padding: .4rem;
+    padding-left: 20px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.links a:hover{
+    background-color: rgb(121, 193, 169);
+    transition: .5s all;
+}

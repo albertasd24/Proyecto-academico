@@ -1,0 +1,10 @@
+.containerLayoutDashboard {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 20% 80%;
+    background-color: #E3E3E3;
+}
+.DashboardContent{
+    padding: 1rem;
+}
