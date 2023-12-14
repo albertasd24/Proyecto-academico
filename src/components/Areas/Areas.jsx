@@ -1,17 +1,28 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Areas.css';
 import Area from '../Area/Area';
+import { areasService } from '../../services/areas';
 
 const Areas = ({ }) => {
+	const [areas, setareas] = useState([])
+	useEffect(() => {
+		const getAreas = async () => {
+			const data = await areasService();
+			setareas(data)
+		}
+		getAreas()
+	}, [])
+
 	return (
 		<div >
 			<h1>Solicitar a Area</h1>
 			<div className='containerAreas'>
-				<Area name="RRHH" />
-				<Area name="Financiera" />
-				<Area name="Seguridad T.I" />
-				<Area name="Juridica" />
+				{areas.map((area) => (
+					<>
+						<Area name={area.name} image={area.image} />
+					</>
+				))}
 			</div>
 		</div>
 	);

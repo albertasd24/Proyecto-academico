@@ -1,6 +1,7 @@
 .containerSidebar {
   background-color: #ffffff;
   text-align: center;
+  padding-top: 10px;
 }
 .photoProfile{
     border-radius: 50%;
@@ -15,13 +16,22 @@
 .links a{
     display: inline-block;
     text-align: left;
-    padding: .4rem;
+    padding: .6rem;
     padding-left: 20px;
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    font-weight: bold;
+    font-size: 1rem;
+    color: #303030;
+    border-bottom: 1px solid #ccc;
 }
 
 .links a:hover{
-    background-color: rgb(121, 193, 169);
+    background-color: rgb(221, 221, 221);
     transition: .5s all;
+}
+
+.iconSidebar{
+    width: 20px;
+    height: 20px;
 }

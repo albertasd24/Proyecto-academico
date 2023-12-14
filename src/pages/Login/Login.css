@@ -31,10 +31,21 @@
 .buttonLogin{
     background-color: #31B0F8;
     color: #fff;
+    transition: .3s all;
+}
+.buttonLogin:hover{
+    background-color: #117ebd;
+    transition: .3s all;
+    cursor: pointer;
 }
 .forgotPassword{
     margin-top: -14px;
     color: #191919;
     font-size: .8rem;
     text-decoration: none;
+}
+.messageError{
+    color: rgb(204, 56, 56);
+    font-weight: bold;
+    transition: .2s ease;
 }
